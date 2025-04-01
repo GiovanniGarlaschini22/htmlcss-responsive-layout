@@ -1,37 +1,84 @@
-/* Soluzione qui */
-
 /* Tablet responsive view */
 @media screen and (min-width: 768px) {
     #topbar {
-        justify-content: left;
+        justify-content: flex-start;
     }
+
     main {
         padding: 40px;
     }
-    .recipe-name {
+
+    .recipe-origin {
+        display: inline;
+    }
+
+    h2 {
         font-size: 2rem;
     }
-    .btn {
-        padding: 10px 90px;
-    }
-    .ads {
+
+    .quick-notes ul {
         display: flex;
+        flex-wrap: wrap;
     }
-    .recipe-origin {
-        display: flex;  
+
+    .quick-notes li {
+        width: calc(100% / 3);
     }
+
+    .social-networks .btn {
+        flex-grow: 1;
+    }
+
+    .ads {
+        display: block;
+    }
+
     .presentation img {
         float: left;
-        margin-right: 8px;
+        margin-right: 10px;
+        margin-bottom: 8px;
     }
 }
-
-
-
 
 
 
 /* Desktop responsive view */
 @media screen and (min-width: 992px) {
 
+    h2 {
+        font-size: 2rem;
+    }
+
+    .quick-notes ul {
+        display: block;
+    }
+
+    .quick-notes li {
+        width: 100%;
+    }
+
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-video {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .recipe-info {
+        width: 30%;
+    }
+
+    .social-networks .label {
+        display: inline;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
 }
